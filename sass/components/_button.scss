@@ -1,0 +1,22 @@
+.btn {
+  padding: 10px 20px;
+  min-width: 200px;
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.88;
+  letter-spacing: 0.06em;
+  color: var(--primary-bg-color);
+
+  background-color: var(--accent-color);
+  border-radius: 4px;
+  border-style: none;
+  cursor: pointer;
+
+  transition: background-color var(--transition);
+
+  &:hover,
+  &:focus {
+    background-color: var(--hero-buttom-active);
+  }
+}

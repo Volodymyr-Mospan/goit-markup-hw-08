@@ -1,0 +1,17 @@
+/* ==================== Підвал ==================== */
+
+.footer {
+  background-color: var(--third-bg-color);
+  padding-top: 60px;
+  padding-bottom: 60px;
+}
+
+.footer__container {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer__logo {
+  margin-right: 0;
+  margin-bottom: 20px;
+}
