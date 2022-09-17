@@ -42,3 +42,9 @@
     fill: var(--accent-color);
   }
 }
+
+@media screen and (max-width: 767px) {
+  .communication {
+    display: none;
+  }
+}

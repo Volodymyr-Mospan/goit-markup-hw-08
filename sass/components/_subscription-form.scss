@@ -1,5 +1,4 @@
 .subscription-form {
-  @include centeredFlex($positionX: flex-end);
 
   &__label {
     display: flex;
@@ -17,7 +16,7 @@
 
   &__input {
     padding: 14px 15px;
-    width: 358px;
+    margin-bottom: 20px;
 
     font-size: 16px;
     line-height: 1.25;

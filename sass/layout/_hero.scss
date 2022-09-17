@@ -1,34 +1,35 @@
 .hero {
-  max-width: 1600px;
+  max-width: 480px;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 200px;
-  padding-bottom: 200px;
+  padding-top: 118px;
+  padding-bottom: 118px;
 
   background-color: #c4c4c4;
   text-align: center;
 
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/hero-img.jpg);
+    url(../images/hero-img-mob.jpg);
   background-size: cover;
   background-position: center;
 
   &__title {
-    width: 696px;
+    max-width: 390px;
     margin-left: auto;
     margin-right: auto;
     margin-top: 0;
     margin-bottom: var(--margin-items);
+    padding:0 15px;
 
     color: var(--primary-bg-color);
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: calc(42 / 26);
     letter-spacing: 0.06em;
     text-transform: uppercase;
   }
 
   &__btn {
-    padding: 10px 32px;
+    padding: 10px 24px;
   }
 }

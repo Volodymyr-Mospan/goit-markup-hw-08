@@ -1,17 +1,13 @@
 .team-list {
-  display: flex;
-  flex-wrap: wrap;
-
   list-style: none;
   padding: 0;
   margin: 0;
 
-  gap: var(--margin-items);
   text-align: center;
 }
 
 .employee {
-  flex-basis: calc((100% - (3 * var(--margin-items))) / 4);
+  // flex-basis: calc((100% - (3 * var(--margin-items))) / 4);
 
   background-color: var(--primary-bg-color);
   border-radius: 0 0 4px 4px;

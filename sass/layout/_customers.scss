@@ -2,6 +2,7 @@
 
 .customers {
   display: flex;
+  flex-wrap: wrap;
   gap: var(--margin-items);
 
   list-style: none;
@@ -9,7 +10,7 @@
   margin: 0;
 
   &__item {
-    width: calc((100% - (5 * var(--margin-items))) / 6);
+    width: calc((100% - (1 * var(--margin-items))) / 2);
   }
 
   &__link {
