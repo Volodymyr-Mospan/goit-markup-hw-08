@@ -3,3 +3,9 @@
   align-items: $positionX;
   justify-content: $positionY;
 }
+
+@mixin fontSize($fw: 400, $fs: 14px, $lh: 24px) {
+  font-weight: $fw;
+  font-size: $fs;
+  line-height: calc($lh / $fs);
+}

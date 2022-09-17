@@ -2,9 +2,6 @@
   padding-top: 60px;
   padding-bottom: 60px;
 
-  // &--other-size {
-  //   padding-bottom: 0;
-  // }
 
   &--second-bg {
     background-color: var(--second-bg-color);
@@ -12,15 +9,14 @@
 
   &__title {
     margin-top: 0;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
 
     color: var(--title-text-color);
-    font-size: 36px;
-    line-height: 1.17;
+    @include fontSize(700, 28px, 33px);
     text-align: center;
   }
 }
 
 .section__title--visually-hidden {
-  @extend %visually-hidden
+  @extend %visually-hidden;
 }

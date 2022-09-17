@@ -1,5 +1,6 @@
 .socials-list {
   @include centeredFlex;
+  flex-wrap: wrap;
 
   list-style: none;
   padding: 0;
@@ -35,5 +36,21 @@
   &__link:hover &__icon,
   &__link:focus &__icon {
     fill: var(--primary-bg-color);
+  }
+
+  @media screen and (max-width: 767px) {
+    & {
+      justify-content: start;
+    }
+    &__item--mob-menu {
+      width: auto;
+      height: auto;
+    }
+
+    &__link--mob-menu {
+      @include fontSize(500, 18px, 22px);
+      text-decoration: none;
+      color: var(--accent-color);
+    }
   }
 }
