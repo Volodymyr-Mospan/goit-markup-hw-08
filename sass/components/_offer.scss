@@ -3,15 +3,12 @@
   margin-bottom: 30px;
 
   &__label {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-
+    @include fontSize(400, 12px, 14px);
     letter-spacing: 0.03em;
   }
 
   &__checkbox--visually-hidden {
-    @extend %visually-hidden
+    @extend %visually-hidden;
   }
 
   &__custom-checkbox {

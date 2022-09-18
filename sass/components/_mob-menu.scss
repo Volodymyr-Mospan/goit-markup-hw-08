@@ -1,6 +1,6 @@
 .menu-container {
   position: fixed;
-  z-index: 999;
+  z-index: 99;
   top: 0;
   left: 0;
   width: 100vw;
@@ -24,7 +24,6 @@
   position: absolute;
   top: 10px;
   right: 10px;
-  z-index: 3;
   padding: 0;
   margin-left: auto;
 
@@ -32,6 +31,12 @@
   border: none;
 
   cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .menu-toggle {
+    display: none;
+  }
 }
 
 .menu-toggle__btn:hover,
@@ -46,3 +51,4 @@
 .menu-toggle__icon-cross {
   display: block;
 }
+
