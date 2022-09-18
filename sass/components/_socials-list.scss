@@ -1,5 +1,6 @@
 .socials-list {
   @include centeredFlex;
+
   flex-wrap: wrap;
 
   list-style: none;
@@ -39,9 +40,10 @@
   }
 
   @media screen and (max-width: 767px) {
-    & {
+    &--mob-menu {
       justify-content: start;
     }
+
     &__item--mob-menu {
       width: auto;
       height: auto;
