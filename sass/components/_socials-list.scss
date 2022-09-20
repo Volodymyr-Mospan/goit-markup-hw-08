@@ -55,4 +55,10 @@
       color: var(--accent-color);
     }
   }
+
+  @media (min-width: 768px) {
+    &--mob-menu {
+      display: none;
+    }
+  }
 }
