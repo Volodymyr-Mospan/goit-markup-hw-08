@@ -159,9 +159,8 @@
   left: 0;
   width: 100vw;
   height: 100vh;
-  display: flex;
-  flex-direction: column;
   padding: 48px 40px;
+  overflow: hidden;
   background-color: var(--primary-bg-color);
   transform: translateY(-100%);
   transition: transform var(--transition);
