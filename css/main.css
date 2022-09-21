@@ -865,6 +865,11 @@
     flex-grow: 2;
   }
 }
+@media screen and (min-width: 1200px) {
+  .portfolio__item {
+    flex-basis: calc((100% - 2 * var(--margin-items)) / 3);
+  }
+}
 
 .header {
   position: relative;
@@ -1180,7 +1185,6 @@
     padding-right: 89px;
   }
   .footer__com-link {
-    text-align: start;
     margin-bottom: 60px;
   }
 }

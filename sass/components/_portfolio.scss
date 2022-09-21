@@ -114,4 +114,10 @@
       flex-grow: 2;
     }
   }
+
+  @media screen and (min-width: 1200px) {
+    &__item {
+      flex-basis: calc((100% - (2 * var(--margin-items))) / 3);
+    }
+  }
 }
