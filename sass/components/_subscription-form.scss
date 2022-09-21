@@ -7,7 +7,7 @@
   &__title {
     color: var(--primary-bg-color);
     font-weight: 700;
-    line-height: 1.14;
+    line-height: 1.143;
     text-transform: uppercase;
 
     margin-bottom: 20px;
@@ -39,8 +39,26 @@
 
   @media screen and (min-width: 768px) {
     width: 100%;
-    margin-left: 151px;
-    margin-right: 137px;
+    margin-left: 77px;
+    margin-right: 63px;
+  }
 
+  @media (min-width: 1200px) {
+    width: auto;
+    @include centeredFlex($ai: flex-end);
+    margin: 0;
+
+    &__input {
+      margin: 0;
+      width: 358px;
+    }
+
+    &__label {
+      align-items: flex-start;
+    }
+
+    &__btn {
+      margin-left: 12px;
+    }
   }
 }

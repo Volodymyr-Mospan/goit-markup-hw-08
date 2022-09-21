@@ -24,8 +24,21 @@
       display: flex;
       flex-wrap: wrap;
       align-items: baseline;
-      justify-content: space-evenly;
+      justify-content: space-between;
+
+      padding-left: 89px;
+      padding-right: 89px;
+    }
+  }
+
+  @media (min-width: 1200px) {
+    &__container {
+      padding-left: 15px;
+      padding-right: 15px;
     }
 
+    &__com-link {
+      text-align: start;
+    }
   }
 }

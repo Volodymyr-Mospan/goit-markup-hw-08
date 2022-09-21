@@ -32,9 +32,7 @@
     padding: 0 15px;
 
     color: var(--primary-bg-color);
-    font-weight: 900;
-    font-size: 26px;
-    line-height: calc(42 / 26);
+    @include fontSize(900, 26px, 42px);
     letter-spacing: 0.06em;
     text-transform: uppercase;
   }
@@ -44,7 +42,7 @@
   }
 
   @media screen and (min-width: 768px) {
-    max-width: 768px;
+    max-width: 1199px;
     padding-top: 118px;
     padding-bottom: 118px;
 
@@ -68,7 +66,7 @@
     }
   }
 
-  @media screen and (min-width: 1600px) {
+  @media screen and (min-width: 1200px) {
     max-width: 1600px;
     padding-top: 200px;
     padding-bottom: 200px;
@@ -90,6 +88,15 @@
       (min-resolution: 3dppx) {
       background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
         url(../images/img-desk@3x.jpg);
+    }
+
+    &__title {
+      max-width: 696px;
+      @include fontSize(900, 44px, 60px);
+    }
+
+    &__btn {
+      padding: 10px 32px;
     }
   }
 }

@@ -45,4 +45,10 @@
       width: calc((100% - (2 * var(--margin-items))) / 3);
     }
   }
+
+  @media (min-width: 1200px) {
+    &__item {
+      width: calc((100% - (5 * var(--margin-items))) / 6);
+    }
+  }
 }

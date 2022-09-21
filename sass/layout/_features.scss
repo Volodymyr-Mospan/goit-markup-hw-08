@@ -40,14 +40,15 @@
     flex-wrap: wrap;
     gap: var(--margin-items);
 
-    
     &__item {
       margin: 0;
       flex-basis: calc((100% - 1 * var(--margin-items)) / 2);
     }
+  }
 
-    // .features__item {
-    //   gap: var(--margin-items);
-    // }
+  @media screen and (min-width: 1200px) {
+    &__item {
+      flex-basis: calc((100% - 3 * var(--margin-items)) / 4);
+    }
   }
 }

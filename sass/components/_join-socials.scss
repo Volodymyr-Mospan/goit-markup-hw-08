@@ -11,6 +11,10 @@
 
     color: var(--primary-bg-color);
   }
+
+  @media screen and (min-width: 1200px) {
+    text-align: start;
+  }
 }
 
 .socials-list__link--in-footer {
@@ -20,4 +24,3 @@
 .socials-list__icon--in-footer {
   fill: var(--primary-bg-color);
 }
-

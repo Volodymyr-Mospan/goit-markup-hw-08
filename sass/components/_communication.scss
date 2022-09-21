@@ -51,10 +51,23 @@
   @media screen and (min-width: 768px) {
     @include centeredFlex($ai: flex-start);
     flex-direction: column;
-
+    &__item:nth-child(n + 2) {
+      margin-top: 10px;
+    }
 
     &__link {
+      @include centeredFlex;
       @include fontSize(500, 12px, 14px);
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    align-items: center;
+    flex-direction: row;
+
+    &__item:nth-child(n + 2) {
+      margin-top: 0;
+      margin-left: var(--margin-items);
     }
   }
 }
