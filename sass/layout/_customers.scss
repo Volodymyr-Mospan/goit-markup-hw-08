@@ -39,4 +39,10 @@
   &__link:focus &__icon {
     fill: var(--accent-color);
   }
+
+  @media (min-width: 768px) {
+    &__item {
+      width: calc((100% - (2 * var(--margin-items))) / 3);
+    }
+  }
 }

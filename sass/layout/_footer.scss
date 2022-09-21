@@ -4,19 +4,28 @@
   background-color: var(--third-bg-color);
   padding-top: 60px;
   padding-bottom: 60px;
-}
 
-.footer__container {
-  text-align: center;
-}
+  &__container {
+    text-align: center;
+  }
 
-.footer__com-link {
-  margin-bottom: 60px;
-}
+  &__com-link {
+    margin-bottom: 60px;
+  }
 
-.footer__logo {
-  margin-left: auto;
-  margin-right: auto;
-  margin-bottom: 20px;
-}
+  &__logo {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+  }
 
+  @media (min-width: 768px) {
+    &__container {
+      display: flex;
+      flex-wrap: wrap;
+      align-items: baseline;
+      justify-content: space-evenly;
+    }
+
+  }
+}
