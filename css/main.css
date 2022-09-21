@@ -184,7 +184,7 @@
     height: 100vh;
     flex-direction: column;
     padding: 48px 40px;
-    overflow: hidden;
+    overflow: auto;
     background-color: var(--primary-bg-color);
     transform: translateY(-100%);
     transition: transform var(--transition);
@@ -229,7 +229,6 @@
   margin-top: 32px;
 }
 .nav__link {
-  position: relative;
   display: inline-block;
   color: var(--title-text-color);
   font-weight: 500;
@@ -245,16 +244,6 @@
 .nav__link--current {
   color: var(--accent-color);
 }
-.nav__link--current::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -1px;
-  width: 100%;
-  height: 4px;
-  border-radius: 2px;
-  background-color: var(--accent-color);
-}
 @media screen and (min-width: 768px) {
   .nav {
     margin-left: auto;
@@ -262,9 +251,6 @@
   }
   .nav__list {
     display: flex;
-    list-style: none;
-    padding: 0;
-    margin: 0;
   }
   .nav__item:nth-child(n+2) {
     margin-top: 0;
@@ -272,19 +258,12 @@
   }
   .nav__link {
     position: relative;
-    display: inline-block;
     padding-top: 32px;
     padding-bottom: 32px;
     color: var(--title-text-color);
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
-    letter-spacing: 0.02em;
-    text-decoration: none;
-    transition: color var(--transition);
-  }
-  .nav__link:hover, .nav__link:focus {
-    color: var(--accent-color);
   }
   .nav__link--current {
     color: var(--accent-color);
@@ -335,6 +314,7 @@
   .communication {
     display: flex;
     flex-direction: column-reverse;
+    margin-top: 64px;
     margin-bottom: 64px;
   }
   .communication__item:nth-child(n+2) {
@@ -472,6 +452,7 @@
 @media screen and (min-width: 1200px) {
   .join-socials {
     text-align: start;
+    margin-bottom: 0;
   }
 }
 
@@ -574,7 +555,7 @@
   border-radius: 4px;
 }
 .backdrop--is-hidden .modal {
-  transform: translate(-50%, -150%) scale(0.25);
+  transform: translate(0%, -100%) scale(0.25);
   opacity: 0.25;
 }
 .modal__btn-closing {
@@ -595,6 +576,11 @@
 }
 .modal__btn-closing:hover, .modal__btn-closing:focus {
   fill: var(--accent-color);
+}
+@media screen and (min-width: 1200px) {
+  .modal {
+    max-width: 528px;
+  }
 }
 
 /* ========== Модальна форма ========== */
@@ -693,7 +679,15 @@
   display: block;
   margin-left: auto;
   margin-right: auto;
+  padding: 10px 52px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+@media screen and (min-width: 1200px) {
+  .modal-form__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+  }
 }
 
 .offer {
@@ -731,6 +725,13 @@
 }
 .offer__link:hover, .offer__link:focus {
   text-decoration: none;
+}
+@media screen and (min-width: 1200px) {
+  .offer__label {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7142857143;
+  }
 }
 
 .filter {
@@ -849,7 +850,7 @@
 }
 
 .hero {
-  max-width: 480px;
+  max-width: 767px;
   margin-left: auto;
   margin-right: auto;
   padding-top: 118px;
@@ -1158,5 +1159,6 @@
   }
   .footer__com-link {
     text-align: start;
+    margin-bottom: 0;
   }
 }/*# sourceMappingURL=main.css.map */

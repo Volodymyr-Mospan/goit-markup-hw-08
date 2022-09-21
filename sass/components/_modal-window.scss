@@ -15,7 +15,7 @@
   border-radius: 4px;
 
   .backdrop--is-hidden & {
-    transform: translate(-50%, -150%) scale(0.25);
+    transform: translate(0%, -100%) scale(0.25);
 
     opacity: 0.25;
   }
@@ -44,5 +44,9 @@
   &__btn-closing:hover,
   &__btn-closing:focus {
     fill: var(--accent-color);
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 528px;
   }
 }
