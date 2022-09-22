@@ -30,6 +30,8 @@
         >
         <button type="button" class="menu-toggle js-open-menu">
           <svg
+            aria-label="Кнопка відкриття мобільного меню"
+            role="button"
             class="menu-toggle__icon"
             aria-expanded="false"
             aria-controls="mobile-menu"
@@ -42,7 +44,13 @@
 
         <div class="menu-container js-menu-container" id="mobile-menu">
           <button type="button" class="menu-toggle js-close-menu">
-            <svg class="menu-toggle__icon" width="40" height="40">
+            <svg
+              aria-label="Кнопка відкриття мобільного меню"
+              role="button"
+              class="menu-toggle__icon"
+              width="40"
+              height="40"
+            >
               <use class="menu-toggle__icon-cross" href="./images/icon.svg#icon-cross"></use>
             </svg>
           </button>
