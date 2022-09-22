@@ -167,29 +167,58 @@
           <h2 class="section__title">Чим ми займаємося</h2>
           <ul class="works">
             <li class="works__item">
-              <img
-                class="works__img"
-                src="./images/box-1.jpg"
-                alt="Десктопні додатки"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/work-1.jpg    1x,
+                    ./images/work-1@2x.jpg 2x,
+                    ./images/work-1@3x.jpg 3x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+
+                <img class="works__img" src="./images/work-1.jpg" alt="Десктопні додатки" />
+              </picture>
+
               <div class="works__overlay">
                 <p class="works__text">Десктопні додатки</p>
               </div>
             </li>
             <li class="works__item">
-              <img class="works__img" src="./images/box-2.jpg" alt="Мобільні додатки" width="370" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/work-2.jpg    1x,
+                    ./images/work-2@2x.jpg 2x,
+                    ./images/work-2@3x.jpg 3x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+
+                <img class="works__img" src="./images/work-2.jpg" alt="Мобільні додатки" />
+              </picture>
+
               <div class="works__overlay">
                 <p class="works__text">Мобільні додатки</p>
               </div>
             </li>
             <li class="works__item">
-              <img
-                class="works__img"
-                src="./images/box-3.jpg"
-                alt="Дизайнерські рішення"
-                width="370"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/work-3.jpg    1x,
+                    ./images/work-3@2x.jpg 2x,
+                    ./images/work-3@3x.jpg 3x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+
+                <img class="works__img" src="./images/work-3.jpg" alt="Дизайнерські рішення" />
+              </picture>
+
               <div class="works__overlay">
                 <p class="works__text">Дизайнерські рішення</p>
               </div>
@@ -204,11 +233,43 @@
           <h2 class="section__title">Наша команда</h2>
           <ul class="team-list">
             <li class="employee">
-              <img
-                class="employee__photo"
-                src="./images/igor-dem.jpg"
-                alt="Фото Ігоря Дем'яненка"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/igor-dem-desk.jpg    1x,
+                    ./images/igor-dem-desk@2x.jpg 2x,
+                    ./images/igor-dem-desk@3x.jpg 3x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+
+                <source
+                  srcset="
+                    ./images/igor-dem-tab.jpg    1x,
+                    ./images/igor-dem-tab@2x.jpg 2x,
+                    ./images/igor-dem-tab@3x.jpg 3x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+
+                <source
+                  srcset="
+                    ./images/igor-dem-mob.jpg    1x,
+                    ./images/igor-dem-mob@2x.jpg 2x,
+                    ./images/igor-dem-mob@3x.jpg 3x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                />
+
+                <img
+                  class="employee__photo"
+                  src="./images/igor-dem-mob.jpg"
+                  alt="Фото Ігоря Дем'яненка"
+                />
+              </picture>
               <div class="employee__lower-box">
                 <h3 class="employee__name">Ігор Дем'яненко</h3>
                 <p class="employee__position" lang="en">Product Designer</p>
@@ -273,11 +334,44 @@
               </div>
             </li>
             <li class="employee">
-              <img
-                class="employee__photo"
-                src="./images/olga-repina.jpg"
-                alt="Фото Ольги Рєпіної"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/olga-repina-desk.jpg    1x,
+                    ./images/olga-repina-desk@2x.jpg 2x,
+                    ./images/olga-repina-desk@3x.jpg 3x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+
+                <source
+                  srcset="
+                    ./images/olga-repina-tab.jpg    1x,
+                    ./images/olga-repina-tab@2x.jpg 2x,
+                    ./images/olga-repina-tab@3x.jpg 3x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+
+                <source
+                  srcset="
+                    ./images/olga-repina-mob.jpg    1x,
+                    ./images/olga-repina-mob@2x.jpg 2x,
+                    ./images/olga-repina-mob@3x.jpg 3x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                />
+
+                <img
+                  class="employee__photo"
+                  src="./images/olga-repina-mob.jpg"
+                  alt="Фото Ольги Рєпіної"
+                />
+              </picture>
+
               <div class="employee__lower-box">
                 <h3 class="employee__name">Ольга Рєпіна</h3>
                 <p class="employee__position" lang="en">Frontend Developer</p>
@@ -342,11 +436,43 @@
               </div>
             </li>
             <li class="employee">
-              <img
-                class="employee__photo"
-                src="./images/mykola-tarasov.jpg"
-                alt="Фото Миколи Тарасова"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/mykola-tarasov-desk.jpg    1x,
+                    ./images/mykola-tarasov-desk@2x.jpg 2x,
+                    ./images/mykola-tarasov-desk@3x.jpg 3x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+
+                <source
+                  srcset="
+                    ./images/mykola-tarasov-tab.jpg    1x,
+                    ./images/mykola-tarasov-tab@2x.jpg 2x,
+                    ./images/mykola-tarasov-tab@3x.jpg 3x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+
+                <source
+                  srcset="
+                    ./images/mykola-tarasov-mob.jpg    1x,
+                    ./images/mykola-tarasov-mob@2x.jpg 2x,
+                    ./images/mykola-tarasov-mob@3x.jpg 3x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                />
+                <img
+                  class="employee__photo"
+                  src="./images/mykola-tarasov-mob.jpg"
+                  alt="Фото Миколи Тарасова"
+                />
+              </picture>
+
               <div class="employee__lower-box">
                 <h3 class="employee__name">Микола Тарасов</h3>
                 <p class="employee__position" lang="en">Marketing</p>
@@ -411,11 +537,44 @@
               </div>
             </li>
             <li class="employee">
-              <img
-                class="employee__photo"
-                src="./images/myhailo-ermakov.jpg"
-                alt="Фото Михайла Єрмакова"
-              />
+              <picture>
+                <source
+                  srcset="
+                    ./images/myhailo-ermakov-desk.jpg    1x,
+                    ./images/myhailo-ermakov-desk@2x.jpg 2x,
+                    ./images/myhailo-ermakov-desk@3x.jpg 3x
+                  "
+                  media="(min-width: 1200px)"
+                  type="image/jpeg"
+                />
+
+                <source
+                  srcset="
+                    ./images/myhailo-ermakov-tab.jpg    1x,
+                    ./images/myhailo-ermakov-tab@2x.jpg 2x,
+                    ./images/myhailo-ermakov-tab@3x.jpg 3x
+                  "
+                  media="(min-width: 768px)"
+                  type="image/jpeg"
+                />
+
+                <source
+                  srcset="
+                    ./images/myhailo-ermakov-mob.jpg    1x,
+                    ./images/myhailo-ermakov-mob@2x.jpg 2x,
+                    ./images/myhailo-ermakov-mob@3x.jpg 3x
+                  "
+                  media="(max-width: 767px)"
+                  type="image/jpeg"
+                />
+
+                <img
+                  class="employee__photo"
+                  src="./images/myhailo-ermakov-mob.jpg"
+                  alt="Фото Михайла Єрмакова"
+                />
+              </picture>
+
               <div class="employee__lower-box">
                 <h3 class="employee__name">Михайло Єрмаков</h3>
                 <p class="employee__position" lang="en">UI Designer</p>
