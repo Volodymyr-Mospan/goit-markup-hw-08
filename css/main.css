@@ -981,7 +981,7 @@
   margin: 0;
   gap: var(--margin-items);
 }
-.features__item:not:last {
+.features__item:not(:last-child) {
   margin-bottom: var(--margin-items);
 }
 .features__box {
