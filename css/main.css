@@ -998,7 +998,6 @@
   list-style: none;
   padding: 0;
   margin: 0;
-  gap: var(--margin-items);
 }
 .features__item:not(:last-child) {
   margin-bottom: var(--margin-items);
@@ -1032,12 +1031,15 @@
     gap: var(--margin-items);
   }
   .features__item {
-    margin: 0;
     flex-basis: calc((100% - 1 * var(--margin-items)) / 2);
+  }
+  .features__item:not(:last-child) {
+    margin-bottom: 0;
   }
 }
 @media screen and (min-width: 1200px) {
   .features__item {
+    margin-bottom: 0;
     flex-basis: calc((100% - 3 * var(--margin-items)) / 4);
   }
 }

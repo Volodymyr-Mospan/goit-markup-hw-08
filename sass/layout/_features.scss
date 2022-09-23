@@ -3,8 +3,6 @@
   padding: 0;
   margin: 0;
 
-  gap: var(--margin-items);
-
   &__item:not(:last-child) {
     margin-bottom: var(--margin-items);
   }
@@ -38,16 +36,22 @@
   @media screen and (min-width: 768px) {
     display: flex;
     flex-wrap: wrap;
+
     gap: var(--margin-items);
 
     &__item {
-      margin: 0;
       flex-basis: calc((100% - 1 * var(--margin-items)) / 2);
+    }
+
+    &__item:not(:last-child) {
+      margin-bottom: 0;
     }
   }
 
   @media screen and (min-width: 1200px) {
     &__item {
+      margin-bottom: 0;
+
       flex-basis: calc((100% - 3 * var(--margin-items)) / 4);
     }
   }
