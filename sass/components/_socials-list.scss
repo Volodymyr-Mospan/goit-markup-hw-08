@@ -49,6 +49,11 @@
       height: auto;
     }
 
+    &__item--mob-menu:not(:last-child) {
+      padding-right: 10px;
+      border-right: 1px solid rgba(33, 33, 33, 0.2);
+    }
+
     &__link--mob-menu {
       @include fontSize(500, 18px, 22px);
       text-decoration: none;

@@ -70,5 +70,9 @@
       margin-top: 0;
       margin-left: var(--margin-items);
     }
+
+    &__link {
+      @include fontSize(500, 14px, 16px);
+    }
   }
 }
